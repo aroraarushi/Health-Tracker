@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary:#8B5CF6;
+  --color-bg: #F5F3FF;
+  --color-darkprimary:#c3b6f7;
+}
+
+.custom-border {
+  border: 2px solid #E6E6E6; 
+}
+
+
+.health-data-table tbody tr {
+  @apply border-b border-gray-300;
+}
+
+.health-data-table tbody tr:last-child {
+  @apply border-0;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #F5F3FF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
